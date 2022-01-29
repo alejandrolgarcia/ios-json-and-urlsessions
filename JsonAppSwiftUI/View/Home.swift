@@ -8,13 +8,36 @@
 import SwiftUI
 
 struct Home: View {
+    
+    @EnvironmentObject var login: PostViewModel
+    @StateObject var jsonData = UserViewModel()
+    
     var body: some View {
-        Text("Bienvenido, login exitoso!")
-    }
-}
-
-struct Home_Previews: PreviewProvider {
-    static var previews: some View {
-        Home()
+        NavigationView{
+            if jsonData.dataModel.isEmpty {
+                ProgressView()
+            } else {
+                List(jsonData.dataModel, id:\.id) { item in
+                    VStack(alignment: .leading){
+                        Text(item.name)
+                        Text(item.email)
+                    }
+                }
+                .navigationBarTitle("Json")
+                .navigationBarItems(
+                    leading: Button(action: {
+                        UserDefaults.standard.removeObject(forKey: "session")
+                        login.authenticated = 0
+                    }){
+                        Text("Salir")
+                    },
+                    trailing: Button(action: {
+                        print("Siguiente")
+                    }){
+                        Text("Siguiente")
+                    }
+                )
+            }
+        }
     }
 }

@@ -15,6 +15,9 @@
 		9C7C878F27A241CF00E83E8F /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C878E27A241CF00E83E8F /* PostViewModel.swift */; };
 		9C7C879127A24D7000E83E8F /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C879027A24D7000E83E8F /* Login.swift */; };
 		9C7C879327A24D7A00E83E8F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C879227A24D7A00E83E8F /* Home.swift */; };
+		9C7C879527A4DF6900E83E8F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C879427A4DF6900E83E8F /* UserModel.swift */; };
+		9C7C879727A4DFD400E83E8F /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C879627A4DFD400E83E8F /* UserViewModel.swift */; };
+		9C7C879927A4E7AB00E83E8F /* VerticalProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C879827A4E7AB00E83E8F /* VerticalProgress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		9C7C878E27A241CF00E83E8F /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		9C7C879027A24D7000E83E8F /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		9C7C879227A24D7A00E83E8F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		9C7C879427A4DF6900E83E8F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		9C7C879627A4DFD400E83E8F /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		9C7C879827A4E7AB00E83E8F /* VerticalProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalProgress.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				9C7C878E27A241CF00E83E8F /* PostViewModel.swift */,
+				9C7C879627A4DFD400E83E8F /* UserViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -91,6 +98,7 @@
 			children = (
 				9C7C879027A24D7000E83E8F /* Login.swift */,
 				9C7C879227A24D7A00E83E8F /* Home.swift */,
+				9C7C879827A4E7AB00E83E8F /* VerticalProgress.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				9C7C878C27A2408B00E83E8F /* PostModel.swift */,
+				9C7C879427A4DF6900E83E8F /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,8 +183,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C7C878F27A241CF00E83E8F /* PostViewModel.swift in Sources */,
+				9C7C879727A4DFD400E83E8F /* UserViewModel.swift in Sources */,
+				9C7C879527A4DF6900E83E8F /* UserModel.swift in Sources */,
 				9C7C879127A24D7000E83E8F /* Login.swift in Sources */,
 				9C7C877E27A2394700E83E8F /* ContentView.swift in Sources */,
+				9C7C879927A4E7AB00E83E8F /* VerticalProgress.swift in Sources */,
 				9C7C878D27A2408B00E83E8F /* PostModel.swift in Sources */,
 				9C7C879327A24D7A00E83E8F /* Home.swift in Sources */,
 				9C7C877C27A2394700E83E8F /* JsonAppSwiftUIApp.swift in Sources */,
