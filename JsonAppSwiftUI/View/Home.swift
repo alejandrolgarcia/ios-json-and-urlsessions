@@ -20,7 +20,7 @@ struct Home: View {
                 List(jsonData.dataModel, id:\.id) { item in
                     VStack(alignment: .leading){
                         Text(item.name)
-                        Text(item.email)
+                        Text(item.address.geo.lat)
                     }
                 }
                 .navigationBarTitle("Json")
@@ -31,9 +31,7 @@ struct Home: View {
                     }){
                         Text("Salir")
                     },
-                    trailing: Button(action: {
-                        print("Siguiente")
-                    }){
+                    trailing: NavigationLink(destination: Users()){
                         Text("Siguiente")
                     }
                 )
